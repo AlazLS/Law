@@ -7,7 +7,7 @@ public class WordGenerationPlatform3 : MonoBehaviour
 {
     [SerializeField] private TextMesh SlovaText;
     [SerializeField] private string[] Slova;
-    private int SocialityForce;
+    private int SocialityForce = 0;
 
 
     private void Start()

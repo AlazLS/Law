@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19722f292eb3fc43b2741ec885a79d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TagAcite: 
   Mytext: {fileID: 2083790043}
   img: {fileID: 377539915}
   sprite:
@@ -733,6 +734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1307623544}
+  - component: {fileID: 1307623545}
   m_Layer: 0
   m_Name: Icons
   m_TagString: Untagged
@@ -758,6 +760,47 @@ Transform:
   m_Father: {fileID: 1892757618}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307623545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307623543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c520cdd64ff1d418ed146a93d244e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score_Icon: 2
+  Spiritu: {fileID: 1532021122}
+  Social: {fileID: 135763497}
+  Economy: {fileID: 1795719609}
+  Politics: {fileID: 1088436606}
+  Spiritu1:
+  - {fileID: 21300000, guid: 934fda3903992394c9545be3b6d11c19, type: 3}
+  - {fileID: 21300000, guid: 6574820f2368ebb4f8f2f415323cb149, type: 3}
+  - {fileID: 21300000, guid: 51f6ef26655bbb846934dd9c8a64cc79, type: 3}
+  - {fileID: 21300000, guid: 2403212065b809a409a329580ec56862, type: 3}
+  - {fileID: 21300000, guid: 6a52beae544dd4945bfa93792d92a0bb, type: 3}
+  Social1:
+  - {fileID: 21300000, guid: 43506f1188167e344a2dacc78e15545f, type: 3}
+  - {fileID: 21300000, guid: 793fb3d0464f6324fb31204657aed912, type: 3}
+  - {fileID: 21300000, guid: dd41a7ec9bb136a4081a772f38b7b7fe, type: 3}
+  - {fileID: 21300000, guid: 7bd56cab5569ae34abb14596e91859fa, type: 3}
+  - {fileID: 21300000, guid: 500e3df94f472554cafa80d4a128a95c, type: 3}
+  Economy1:
+  - {fileID: 21300000, guid: c35d14a008e88c84ebd3f6cbcf5208c0, type: 3}
+  - {fileID: 21300000, guid: 30d5af4ba42efd849be88500c33a519c, type: 3}
+  - {fileID: 21300000, guid: 48c2411ddcdef404cb0f3dfb9cc51f17, type: 3}
+  - {fileID: 21300000, guid: 7c4a2332765766a40ab77c271722a582, type: 3}
+  - {fileID: 21300000, guid: 292f3c5e64a095d4c9e198749be888d5, type: 3}
+  Politics1:
+  - {fileID: 21300000, guid: 13101b49da3043642a5a8af40fea7cd8, type: 3}
+  - {fileID: 21300000, guid: 4d4b19fb8ff196e49b926043245ee5ea, type: 3}
+  - {fileID: 21300000, guid: f364a7e836f29484cbbed91eeb48a6d1, type: 3}
+  - {fileID: 21300000, guid: 910981e6d2c10864097ed7d2c2ca2e18, type: 3}
+  - {fileID: 21300000, guid: 05a18bcbbe85fab4bbfe9ad0ff6bc67d, type: 3}
 --- !u!1 &1504189543
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WordGenerationPlatform2 : MonoBehaviour
 {
+    Status Score;
     [SerializeField] private TextMesh SlovaText;
     [SerializeField] private string[] Slova;
-    private int EconomyForce;
+    public int EconomyForce = 0;
 
 
     private void Start()
     {
+       
         SlovaText.text = Slova[Random.Range(0, Slova.Length)];
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 479759016567340536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.007, y: 0.01, z: -0.128}
-  m_LocalScale: {x: 0.109331556, y: 0.17336082, z: 1}
+  m_LocalScale: {x: 0.5231515, y: 0.5276927, z: 1}
   m_Children: []
   m_Father: {fileID: 1709027878316602865}
   m_RootOrder: 0
@@ -124,8 +124,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925873395557305715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6662, y: -4.4987, z: 0}
-  m_LocalScale: {x: 1.77317, y: 0.8749063, z: 0.8114}
+  m_LocalPosition: {x: -14.1759, y: -5.5165, z: 0}
+  m_LocalScale: {x: 0.5543516, y: 0.43000054, z: 0.36006498}
   m_Children:
   - {fileID: 6746274481406768313}
   m_Father: {fileID: 0}
@@ -171,12 +171,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a64daeed254a8d44597e586583e71e17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ceafb5731524e847996d4752aba762b, type: 3}
   m_Color: {r: 0.9622642, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.78, y: 1.9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -195,18 +195,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0017362237, y: -0.019575715}
+  m_Offset: {x: -0.013019085, y: -0.01957488}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.9, y: 0.45}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 10.78, y: 1.9}
+    newSize: {x: 10.78, y: 1.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8928152, y: 0.41323858}
+  m_Size: {x: 10.711791, y: 1.6666186}
   m_EdgeRadius: 0
 --- !u!251 &-3231690028585951067
 PlatformEffector2D:
@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd884e34b1162494caa45ab25921107a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MytextEconomy: {fileID: 0}
   SlovaText: {fileID: 5342366502014709318}
   Slova:
   - "\u0412\u0430\u043B\u044E\u0442\u0430"

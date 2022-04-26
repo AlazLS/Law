@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Sprites : MonoBehaviour
 {
+    Status Chek;
     private int swi;
+    public string TagAcite = "";
     public Text Mytext;
+
     [Header("Image")]
     [SerializeField] private Image img;
 
@@ -20,6 +23,8 @@ public class Sprites : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+   
+
     public void ChangeSprites()
     {
         if (swi < 5) {
@@ -30,14 +35,17 @@ public class Sprites : MonoBehaviour
             if (img.sprite == sprite[0])
             {
                 Mytext.text = "Я учёный";
+                TagAcite = "Economy";
             }
             if (img.sprite == sprite[1])
             {
                 Mytext.text = "Я политик";
+                TagAcite = "Economy";
             }
             if (img.sprite == sprite[2])
             {
                 Mytext.text = "Я военный";
+                TagAcite = "Economy";
             }
             if (img.sprite == sprite[3])
             {

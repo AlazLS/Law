@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LapsePath.unity
     guid: efe5511666aa30f458fc08436f3f397a
+  - enabled: 1
+    path: Assets/Scenes/Law.unity
+    guid: fc6fd3eb24e0a8142977d59b54dc09b1
   m_configObjects: {}

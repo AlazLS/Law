@@ -7,7 +7,7 @@ public class WordGenerationPlatform5 : MonoBehaviour
 {
     [SerializeField] private TextMesh SlovaText;
     [SerializeField] private string[] Slova;
-    private int PoliticsForce = 0;
+    public static int PoliticsForce = 0;
 
 
     private void Start()
@@ -19,13 +19,13 @@ public class WordGenerationPlatform5 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            PoliticsForce++;
-            if (PoliticsForce > 7)
+            if (collision.relativeVelocity.y < 0)
             {
-                SceneManager.LoadScene(2);
-            }
-            else if (collision.relativeVelocity.y < 0)
-            {
+                PoliticsForce += 1;
+                if (PoliticsForce > 7)
+                {
+                    SceneManager.LoadScene(3);
+                }
                 print($"Politics: {PoliticsForce}");
             }
         }

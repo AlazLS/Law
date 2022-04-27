@@ -7,7 +7,7 @@ public class WordGenerationPlatform4 : MonoBehaviour
 {
     [SerializeField] private TextMesh SlovaText;
     [SerializeField] private string[] Slova;
-    private int SpiritualitForce = 0;
+    public static int SpiritualitForce = 0;
 
 
     private void Start()
@@ -19,13 +19,13 @@ public class WordGenerationPlatform4 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SpiritualitForce++;
-            if (SpiritualitForce > 7)
+            if (collision.relativeVelocity.y < 0)
             {
-                SceneManager.LoadScene(2);
-            }
-            else if (collision.relativeVelocity.y < 0)
-            {
+                SpiritualitForce += 1;
+                if (SpiritualitForce > 7)
+                {
+                    SceneManager.LoadScene(3);
+                }
                 print($"Spiritualit: {SpiritualitForce}");
             }
         }

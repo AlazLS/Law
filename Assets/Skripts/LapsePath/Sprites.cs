@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Sprites : MonoBehaviour
 {
-    Status Chek;
     private int swi;
-    public string TagAcite = "";
+    public static string TagAcite;
     public Text Mytext;
 
     [Header("Image")]
@@ -34,26 +33,63 @@ public class Sprites : MonoBehaviour
 
             if (img.sprite == sprite[0])
             {
-                Mytext.text = "Я учёный";
+                Mytext.text = "Фондовый рынок растет!!! Попробуйте использовать это!";
                 TagAcite = "Economy";
             }
             if (img.sprite == sprite[1])
             {
-                Mytext.text = "Я политик";
+                Mytext.text = "Вы заметили рост цен? С эти нужно что-то делать…";
                 TagAcite = "Economy";
             }
             if (img.sprite == sprite[2])
             {
-                Mytext.text = "Я военный";
+                Mytext.text = "Нам нужно срочно предотвратить экономический кризис";
                 TagAcite = "Economy";
             }
             if (img.sprite == sprite[3])
             {
-                Mytext.text = "Я агент";
+                Mytext.text = "Люди нуждаются в изменениях, мы можем им их дать.";
+                TagAcite = "Sociality";
             }
             if (img.sprite == sprite[4])
             {
-                Mytext.text = "Я домохозяйка";
+                Mytext.text = "Я думаю, было бы замечательно поднять уровень жизни простых граждан";
+                TagAcite = "Sociality";
+            }
+            if (img.sprite == sprite[5])
+            {
+                Mytext.text = "Области социальной сферы общества нуждаются в реформах.";
+                TagAcite = "Sociality";
+            }
+            if (img.sprite == sprite[6])
+            {
+                Mytext.text = "Кхм.. кхм.. неплохо было бы принять, несколько небольших реформ.";
+                TagAcite = "Politics";
+            }
+            if (img.sprite == sprite[7])
+            {
+                Mytext.text = "Нам нужен закон для  более тесного контакта с мировым сообществом.";
+                TagAcite = "Politics";
+            }
+            if (img.sprite == sprite[8])
+            {
+                Mytext.text = "Мы должны принять несколько законов для сдерживания агрессии вражеских стран.";
+                TagAcite = "Politics";
+            }
+            if (img.sprite == sprite[9])
+            {
+                Mytext.text = "В стране наблюдается упадок культуры и ценностей это нужно срочно решать.";
+                TagAcite = "Spirituality";
+            }
+            if (img.sprite == sprite[10])
+            {
+                TagAcite = "Spirituality";
+                Mytext.text = "Люди все меньше задумываются о своих действиях, так не пойдёт.";
+            }
+            if (img.sprite == sprite[11])
+            {
+                Mytext.text = "Нам нужно сделать так, чтобы люди чаще улыбались";
+                TagAcite = "Spirituality";
             }
         }
         else

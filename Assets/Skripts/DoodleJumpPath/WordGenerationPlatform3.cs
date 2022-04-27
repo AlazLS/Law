@@ -7,7 +7,7 @@ public class WordGenerationPlatform3 : MonoBehaviour
 {
     [SerializeField] private TextMesh SlovaText;
     [SerializeField] private string[] Slova;
-    private int SocialityForce = 0;
+    public static int SocialityForce = 0;
 
 
     private void Start()
@@ -19,13 +19,13 @@ public class WordGenerationPlatform3 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SocialityForce++;
-            if (SocialityForce > 7)
+            if (collision.relativeVelocity.y < 0)
             {
-                SceneManager.LoadScene(2);
-            }
-            else if (collision.relativeVelocity.y < 0)
-            {
+                SocialityForce += 1;
+                if (SocialityForce > 7)
+                {
+                    SceneManager.LoadScene(3);
+                }
                 print($"Sociality: {SocialityForce}");
             }
         }

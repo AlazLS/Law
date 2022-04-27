@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Status : MonoBehaviour
 {
-    Sprites Chek;
-    public int Score_Icon;
+    private static int Score_Icon_Economy = 2;
+    private static int Score_Icon_Social = 2;
+    private static int Score_Icon_Spiritu = 2;
+    private static int Score_Icon_Politics = 2;
 
     [Header("Image")]
     [SerializeField] private Image Spiritu;
@@ -23,13 +26,59 @@ public class Status : MonoBehaviour
 
     public void Switch_Status()
     {
-        if (Score_Icon > 0)
+        if (RandomLaw.ChekChislo == 1 & Score_Icon_Spiritu <= 4)
         {
-            if (Chek.TagAcite == "Spirituality") Spiritu.sprite = Spiritu1[Score_Icon];
-            if (Chek.TagAcite == "Sociality") Social.sprite = Social1[Score_Icon];
-            if (Chek.TagAcite == "Economy") Economy.sprite = Economy1[Score_Icon];
-            if (Chek.TagAcite == "Politics") Politics.sprite = Politics1[Score_Icon];
+            Score_Icon_Spiritu += 1;
+            Spiritu.sprite = Spiritu1[Score_Icon_Spiritu];
         }
-       
+        if (RandomLaw.ChekChislo == 4 & Score_Icon_Social <= 4)
+        {
+            Score_Icon_Social += 1;
+            Social.sprite = Social1[Score_Icon_Social];
+        }
+        if (RandomLaw.ChekChislo == 3 & Score_Icon_Economy <= 4)
+        {
+            Score_Icon_Economy += 1;
+            Economy.sprite = Economy1[Score_Icon_Economy];
+        }
+        if (RandomLaw.ChekChislo == 2 & Score_Icon_Politics <= 4)
+        {
+            Score_Icon_Politics += 1;
+            Politics.sprite = Politics1[Score_Icon_Politics];
+        }
+
+
+
+
+        /*   if (RandomLaw.ChekChislo == 1 & Score_Icon_Spiritu > 0)
+           {
+               Score_Icon_Spiritu -= 1;
+               Spiritu.sprite = Spiritu1[Score_Icon_Spiritu];
+           }
+           if (RandomLaw.ChekChislo == 4 & Score_Icon_Social > 0)
+           {
+               Score_Icon_Social -= 1;
+               Social.sprite = Social1[Score_Icon_Social];
+           }
+           if (RandomLaw.ChekChislo == 3 & Score_Icon_Economy > 0)
+           {
+               Score_Icon_Economy -= 1;
+               Economy.sprite = Economy1[Score_Icon_Economy];
+           }
+           if (RandomLaw.ChekChislo == 2 & Score_Icon_Politics > 0)
+           {
+               Score_Icon_Politics -= 1;
+               Politics.sprite = Politics1[Score_Icon_Politics];
+           }
+           else if ((Score_Icon_Economy | Score_Icon_Politics | Score_Icon_Social | Score_Icon_Spiritu) == 0)
+           {
+               SceneManager.LoadScene(0);
+           }*/
+        RandomLaw.ChekChislo = 0;
+    }
+
+    private void Start()
+    {
+        Switch_Status();
     }
 }

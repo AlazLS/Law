@@ -6,30 +6,28 @@ using UnityEngine.UI;
 
 public class WordGenerationPlatform2 : MonoBehaviour
 {
-    Status Score;
     [SerializeField] private TextMesh SlovaText;
     [SerializeField] private string[] Slova;
-    public int EconomyForce = 0;
+    public static int EconomyForce = 0;
 
 
     private void Start()
     {
-       
+        EconomyForce = 0;
         SlovaText.text = Slova[Random.Range(0, Slova.Length)];
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            EconomyForce++;
-            if (EconomyForce > 7)
+            if (collision.relativeVelocity.y < 0)
             {
-                SceneManager.LoadScene(2);
-            }
-            else if (collision.relativeVelocity.y < 0)
-            {
+                EconomyForce += 1;
+                if (EconomyForce > 7)
+                {
+                    SceneManager.LoadScene(3);
+                }
                 print($"Economy: {EconomyForce}");
             }
         }

@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Law.unity
     guid: fc6fd3eb24e0a8142977d59b54dc09b1
+  - enabled: 1
+    path: Assets/Scenes/LawFalse.unity
+    guid: 96c86347a4e788a43889469aaa9f7396
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: d08bf09b6f8a2ba42a90c84f332e97ee
   m_configObjects: {}

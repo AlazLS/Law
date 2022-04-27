@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Hero : MonoBehaviour
 {
+    public static int Current_State_Spirituality = 2;
+    public static int Current_State_Sociality = 2;
+    public static int Current_State_Economy = 2;
+    public static int Current_State_Politics = 2;
+
     [SerializeField] private float speed = 3f;
     [SerializeField] private int lives = 5;
     [SerializeField] private float jumpForce = 5f;
     private bool isGrounded = false;
-    public int maxLives = 5;
 
     public Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
@@ -17,6 +21,12 @@ public class Hero : MonoBehaviour
 
 
     public static Hero Instance { get; set; }
+
+    IEnumerator Return()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(4);
+    }
 
     private void Run()
     {
@@ -49,9 +59,10 @@ public class Hero : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (collision.collider.name == "DeadZone")
         {
-            SceneManager.LoadScene(1);
+            StartCoroutine("Return");
         }
     }
 }

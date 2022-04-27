@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Sprites : MonoBehaviour
 {
-    private int swi;
+    private int swi = 5;
     public static string TagAcite;
     public Text Mytext;
+    public Text CoreText;
 
     [Header("Image")]
     [SerializeField] private Image img;
@@ -18,7 +19,7 @@ public class Sprites : MonoBehaviour
 
     IEnumerator Limit()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(1);
     }
 
@@ -26,10 +27,11 @@ public class Sprites : MonoBehaviour
 
     public void ChangeSprites()
     {
-        if (swi < 5) {
+        if (swi > 0) {
 
             img.sprite = sprite[Random.Range(0, sprite.Length)];
-            swi++;
+            swi -= 1;
+            CoreText.text = swi + "/5";
 
             if (img.sprite == sprite[0])
             {

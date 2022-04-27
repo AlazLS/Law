@@ -77,6 +77,8 @@
     <Compile Include="Assets\Skripts\Screensaver\ButtonExit.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\WordGenerationPlatform2.cs" />
     <Compile Include="Assets\Skripts\LapsePath\Znakima.cs" />
+    <Compile Include="Assets\Skripts\LapsePath\FalseLaw.cs" />
+    <Compile Include="Assets\Skripts\DoodleJumpPath\Learn.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

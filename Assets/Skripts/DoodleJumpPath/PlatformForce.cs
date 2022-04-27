@@ -21,10 +21,11 @@ public class PlatformForce : MonoBehaviour
     {
         if(collision.collider.name == "DeadZone")
         {
-            float RandX = Random.Range(-5f, 4.5f);
-            float RandY = Random.Range(transform.position.y + 20f, transform.position.y + 22f);
+                float RandX = Random.Range(-5f, 4.5f);
+                float RandY = Random.Range(transform.position.y + 20f, transform.position.y + 22f);
 
-            transform.position = new Vector3(RandX, RandY, 0);
+                transform.position = new Vector3(RandX, RandY, 0);
+
         }
     }
 }

@@ -22,12 +22,14 @@ public class WordGenerationPlatform4 : MonoBehaviour
             if (collision.relativeVelocity.y < 0)
             {
                 SpiritualitForce += 1;
-                if (SpiritualitForce > 7)
-                {
+                if (SpiritualitForce == 10 & Sprites.TagAcite == "Spirituality")
                     SceneManager.LoadScene(3);
-                }
-                print($"Spiritualit: {SpiritualitForce}");
+            }
+            else if(SpiritualitForce == 10 & Sprites.TagAcite != "Spirituality")
+            {
+                SceneManager.LoadScene(4);
             }
         }
     }
+
 }

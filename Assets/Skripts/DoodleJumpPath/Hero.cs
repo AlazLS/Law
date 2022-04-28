@@ -13,11 +13,9 @@ public class Hero : MonoBehaviour
     [SerializeField] private float speed = 3f;
     [SerializeField] private int lives = 5;
     [SerializeField] private float jumpForce = 5f;
-    private bool isGrounded = false;
 
     public Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
-
 
 
     public static Hero Instance { get; set; }
@@ -59,10 +57,9 @@ public class Hero : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.collider.name == "DeadZone")
         {
-            StartCoroutine("Return");
+                StartCoroutine("Return");
         }
     }
 }

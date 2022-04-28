@@ -57,18 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Skripts\LapsePath\Sprites.cs" />
-    <Compile Include="Assets\Skripts\DoodleJumpPath\Health.cs" />
+    <Compile Include="Assets\Skripts\LapsePath\FalseLaw.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\PlatformForce.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\ForceRepresntative.cs" />
     <Compile Include="Assets\Skripts\LapsePath\RandomLaw.cs" />
     <Compile Include="Assets\Skripts\LapsePath\Status.cs" />
+    <Compile Include="Assets\Skripts\LapsePath\Znakima.cs" />
     <Compile Include="Assets\Skripts\Screensaver\ButtonSetting.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\PlatformGeneration.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\WordGenerationPlatform5.cs" />
-    <Compile Include="Assets\Skripts\DoodleJumpPath\HealthMinus.cs" />
     <Compile Include="Assets\Skripts\LapsePath\AllRigth.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\WordGenerationPlatform4.cs" />
-    <Compile Include="Assets\Skripts\Screensaver\TapToStart.cs" />
+    <Compile Include="Assets\Skripts\DoodleJumpPath\Learn.cs" />
     <Compile Include="Assets\Skripts\LapsePath\Back.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\Hero.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\Camera.cs" />
@@ -76,9 +76,9 @@
     <Compile Include="Assets\Skripts\DoodleJumpPath\WordGenerationPlatform3.cs" />
     <Compile Include="Assets\Skripts\Screensaver\ButtonExit.cs" />
     <Compile Include="Assets\Skripts\DoodleJumpPath\WordGenerationPlatform2.cs" />
-    <Compile Include="Assets\Skripts\LapsePath\Znakima.cs" />
-    <Compile Include="Assets\Skripts\LapsePath\FalseLaw.cs" />
-    <Compile Include="Assets\Skripts\DoodleJumpPath\Learn.cs" />
+    <Compile Include="Assets\Skripts\LapsePath\Reload.cs" />
+    <Compile Include="Assets\Skripts\DoodleJumpPath\Scoretext.cs" />
+    <Compile Include="Assets\Skripts\Screensaver\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

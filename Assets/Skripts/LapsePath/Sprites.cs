@@ -10,6 +10,7 @@ public class Sprites : MonoBehaviour
     public static string TagAcite;
     public Text Mytext;
     public Text CoreText;
+    public Text ResporName;
 
     [Header("Image")]
     [SerializeField] private Image img;
@@ -36,61 +37,73 @@ public class Sprites : MonoBehaviour
             if (img.sprite == sprite[0])
             {
                 Mytext.text = "Фондовый рынок растет!!! Попробуйте использовать это!";
+                ResporName.text = "Авантюрист";
                 TagAcite = "Economy";
             }
             if (img.sprite == sprite[1])
             {
                 Mytext.text = "Вы заметили рост цен? С эти нужно что-то делать…";
+                ResporName.text = "Предприниматель";
                 TagAcite = "Economy";
             }
             if (img.sprite == sprite[2])
             {
                 Mytext.text = "Нам нужно срочно предотвратить экономический кризис";
+                ResporName.text = "Представитель компании";
                 TagAcite = "Economy";
             }
             if (img.sprite == sprite[3])
             {
                 Mytext.text = "Люди нуждаются в изменениях, мы можем им их дать.";
+                ResporName.text = "Врач";
                 TagAcite = "Sociality";
             }
             if (img.sprite == sprite[4])
             {
                 Mytext.text = "Я думаю, было бы замечательно поднять уровень жизни простых граждан";
+                ResporName.text = "Пожарный";
                 TagAcite = "Sociality";
             }
             if (img.sprite == sprite[5])
             {
                 Mytext.text = "Области социальной сферы общества нуждаются в реформах.";
+                ResporName.text = "Строитель";
                 TagAcite = "Sociality";
             }
             if (img.sprite == sprite[6])
             {
                 Mytext.text = "Кхм.. кхм.. неплохо было бы принять, несколько небольших реформ.";
+                ResporName.text = "Военный";
                 TagAcite = "Politics";
             }
             if (img.sprite == sprite[7])
             {
                 Mytext.text = "Нам нужен закон для  более тесного контакта с мировым сообществом.";
+                ResporName.text = "Журналист";
                 TagAcite = "Politics";
             }
             if (img.sprite == sprite[8])
             {
                 Mytext.text = "Мы должны принять несколько законов для сдерживания агрессии вражеских стран.";
+                ResporName.text = "Политик";
                 TagAcite = "Politics";
             }
             if (img.sprite == sprite[9])
             {
                 Mytext.text = "В стране наблюдается упадок культуры и ценностей это нужно срочно решать.";
+                ResporName.text = "Учёный-Астронавт";
                 TagAcite = "Spirituality";
             }
             if (img.sprite == sprite[10])
             {
-                TagAcite = "Spirituality";
                 Mytext.text = "Люди все меньше задумываются о своих действиях, так не пойдёт.";
+                ResporName.text = "Монахиня";
+                TagAcite = "Spirituality";
             }
             if (img.sprite == sprite[11])
             {
                 Mytext.text = "Нам нужно сделать так, чтобы люди чаще улыбались";
+                ResporName.text = "Магистр";
                 TagAcite = "Spirituality";
             }
         }

@@ -23,6 +23,12 @@ public class Status : MonoBehaviour
     [SerializeField] private Sprite[] Economy1;
     [SerializeField] private Sprite[] Politics1;
 
+    IEnumerator Reaload()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(5);
+    }
+
     public void Switch_Munis_Status()
     {
         if (RandomLaw.ChekChislo == -1 & Score_Icon_Spiritu > 0)
@@ -81,17 +87,11 @@ public class Status : MonoBehaviour
             Hero.Current_State_Politics = Score_Icon_Politics;
             RandomLaw.ChekChislo = 0;
         }
-        
     }
 
     private void Start()
     {
-        if ((Hero.Current_State_Spirituality | Hero.Current_State_Sociality | Hero.Current_State_Politics | Hero.Current_State_Economy) == 0)
-        {
-            SceneManager.LoadScene(5);
-        }
-        else
-        {
+        
             Spiritu.sprite = Spiritu1[Hero.Current_State_Spirituality];
             Social.sprite = Social1[Hero.Current_State_Sociality];
             Economy.sprite = Economy1[Hero.Current_State_Economy];
@@ -99,6 +99,10 @@ public class Status : MonoBehaviour
 
             Switch_Status();
             Switch_Munis_Status();
-        }
+
+            if (Score_Icon_Economy == 0 | Score_Icon_Politics == 0 | Score_Icon_Social == 0 | Score_Icon_Spiritu  == 0)
+            {
+                StartCoroutine("Reaload");
+            }
     }
 }

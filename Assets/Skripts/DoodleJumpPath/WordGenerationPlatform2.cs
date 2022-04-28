@@ -24,11 +24,14 @@ public class WordGenerationPlatform2 : MonoBehaviour
             if (collision.relativeVelocity.y < 0)
             {
                 EconomyForce += 1;
-                if (EconomyForce > 7)
+                if (EconomyForce == 10 & Sprites.TagAcite == "Economy")
                 {
                     SceneManager.LoadScene(3);
                 }
-                print($"Economy: {EconomyForce}");
+                else if(EconomyForce == 10 & Sprites.TagAcite != "Economy")
+                {
+                    SceneManager.LoadScene(4);
+                }
             }
         }
     }

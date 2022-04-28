@@ -6,14 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class FalseLaw : MonoBehaviour
 {
-    [SerializeField] private Text SlovaText;
-    [SerializeField] private string[] Slova;
-
-
     private void Start()
     {
-        //SlovaText.text = Slova[Random.Range(0, Slova.Length)];
-
         if (Sprites.TagAcite == "Spirituality")
         {
             RandomLaw.ChekChislo = -1;

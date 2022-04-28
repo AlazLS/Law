@@ -22,11 +22,14 @@ public class WordGenerationPlatform3 : MonoBehaviour
             if (collision.relativeVelocity.y < 0)
             {
                 SocialityForce += 1;
-                if (SocialityForce > 7)
+                if (SocialityForce == 10 & Sprites.TagAcite == "Sociality")
                 {
                     SceneManager.LoadScene(3);
                 }
-                print($"Sociality: {SocialityForce}");
+                else if(SocialityForce == 10 & Sprites.TagAcite != "Sociality")
+                {
+                    SceneManager.LoadScene(4);
+                }
             }
         }
     }

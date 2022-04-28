@@ -22,11 +22,14 @@ public class WordGenerationPlatform5 : MonoBehaviour
             if (collision.relativeVelocity.y < 0)
             {
                 PoliticsForce += 1;
-                if (PoliticsForce > 7)
+                if (PoliticsForce == 10 & Sprites.TagAcite == "Politics")
                 {
                     SceneManager.LoadScene(3);
                 }
-                print($"Politics: {PoliticsForce}");
+                else if(PoliticsForce == 10 & Sprites.TagAcite != "Politics")
+                {
+                    SceneManager.LoadScene(4);
+                }
             }
         }
     }
